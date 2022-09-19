@@ -1,0 +1,35 @@
+Algoritmo "algorítmo de números primos"
+// 
+//  
+// Descrição   : Esse algorítmo tem como objetivo identificar e somar números primos a partir de uma entrada N
+// Autor(a)    : Bruna Carvalho da Silva
+// Data atual  : 19/09/2022
+Var
+cont, i, j, n, soma:inteiro
+
+
+Inicio
+escreval ("digite um número")
+leia(n)
+cont<- 0
+i<- 2
+j<- 1
+enquanto i< n faca
+  enquanto j <= i faca
+    se ((i mod j) = 0) entao
+       cont <- cont + 1
+    fimse
+    j <- j + 1
+  fimenquanto
+  se(cont = 2) entao
+  soma<- soma + i
+    escreval("o número" ,i, " é primo")
+  fimse
+  i<- i + 1
+  j <- 1
+  cont <- 0
+fimenquanto
+
+escreval("a soma dos números primos até" ,n, " é: " ,soma, ".")
+
+Fimalgoritmo
